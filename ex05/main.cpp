@@ -1,0 +1,15 @@
+//
+// Created by aymeric on 15/08/23.
+//
+#include "Harl.hpp"
+
+int main()
+{
+	Harl h;
+
+	h.complain("DEBUG");
+	h.complain("INFO");
+	h.complain("WARNING");
+	h.complain("ERROR");
+	return 0;
+}
