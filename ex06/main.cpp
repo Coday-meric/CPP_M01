@@ -3,13 +3,16 @@
 //
 #include "Harl.hpp"
 
-int main()
+int main(int argc, char **argv)
 {
 	Harl h;
 
-	h.complain("DEBUG");
-	h.complain("INFO");
-	h.complain("WARNING");
-	h.complain("ERROR");
+	if (argc != 2)
+	{
+		std::cerr << "Un seul argument accepté !" << std::endl;
+		return -1;
+	}
+	std::string level = argv[1];
+	h.complain(level);
 	return 0;
 }
