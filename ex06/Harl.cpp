@@ -56,9 +56,5 @@ void Harl::complain(std::string level) {
 	}
 
 	while (i < 4)
-	{
-		(this->*ptr[i])();
-		i++;
-	}
-	return;
+		(this->*ptr[i++])();
 }
