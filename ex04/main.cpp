@@ -29,8 +29,8 @@ int main(int argc, char** argv)
 		return -1;
 	}
 
-	size_t lens = std::size(search);
-	std::size_t found = data.find(search);
+	size_t lens = search.size();
+	size_t found = data.find(search);
 	while (found != std::string::npos)
 	{
 		data = data.erase(found, lens);
